@@ -9,7 +9,7 @@ Run asynchronous commands synchronously by putting them in a separate process
 ## Installation
 
 ```
-npm install sync-rpc --save
+npm install @carriyo/sync-rpc --save
 ```
 
 ## Usage
@@ -36,6 +36,11 @@ const client = rpc(__dirname + '/../test-worker.js', 'My Server');
 const result = client('My Message');
 
 assert(result === 'sent My Message to My Server');
+
+// For local debugging, closing child process maybe needed for node.js debugger
+// to detach from child process
+// Also for unit tests, some test reporter don't exit until stdin is closed.
+rpc.cleanup();
 ```
 
 ## License
