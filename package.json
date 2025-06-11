@@ -1,6 +1,6 @@
 {
   "name": "@carriyo/sync-rpc",
-  "version": "1.3.6-beta.1",
+  "version": "1.3.6-beta.2",
   "main": "lib/index.js",
   "description": "Run asynchronous commands synchronously by putting them in a separate process",
   "keywords": [],
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ForbesLindesay/sync-rpc.git"
+    "url": "https://github.com/Carriyo/sync-rpc.git"
   },
   "author": {
     "name": "Forbes Lindesay",
